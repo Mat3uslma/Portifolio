@@ -1,13 +1,9 @@
-import  mysql.connector
-
-
+import mysql.connector
 def cadastro():
     print("Tela de Login ")
     user = str(input("Usuario "))
     email = str(input("Email "))
     senha = str(input("Senha "))
-
-
 
     conexao = mysql.connector.connect(
         host="localhost",
@@ -26,7 +22,9 @@ def cadastro():
 
     cursor.close()
     conexao.close()
-
-
 cadastro()
+
+
+
+
 
